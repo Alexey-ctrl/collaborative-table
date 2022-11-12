@@ -1,0 +1,92 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    height: 75px;
+    background-color: #17a2b8 !important;
+    padding-right: 2rem;
+}
+
+input {
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button {
+    border: unset;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.btn {
+    background-color: #343a40;
+    padding: 10px 10px;
+    text-decoration: unset;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #23272b;
+}
+
+.heater-content {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    height: 100%;
+}
+
+.form-content {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.text-danger {
+    color: #dc3545
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.mt-1 {
+    margin-top: 0.5rem;
+}
+
+.mt-2 {
+    margin-top: 1rem;
+}
+
+#auth-header {
+    display: none;
+}
+
+#login-label {
+    color: white;
+    font-size: 24px;
+}
+
+input.edition {
+    background-color: #ffd4d6;
+}

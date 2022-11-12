@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="form-container">
+    <div class="form-content">
+        <a href="/" class="btn">К таблице</a>
+        <label for="login-input" class="mt-1">Логин:</label>
+        <input id="login-input" type="text">
+        <label for="password-input" class="mt-1">Пароль:</label>
+        <input id="password-input" type="password">
+        <label for="password-repeat-input" class="mt-1">Повторите пароль:</label>
+        <input id="password-repeat-input" type="password">
+        <button id="sing-up-btn" class="btn mt-1">Регистрация</button>
+        <label id="error-message" class="text-danger mt-1"></label>
+        <a href="/login" class="btn mt-2">Войти</a>
+    </div>
+</div>
+<script src="../js/api.js"></script>
+<script src="../js/singUp.js"></script>
+</body>
+</html>
