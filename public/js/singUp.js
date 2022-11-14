@@ -7,12 +7,14 @@ const errorLabel = document.querySelector('#error-message');
 const error = {
   EmptyLogin: 'Заполните логин',
   EmptyPassword: 'Заполните пароль',
-  NotMatchPassword: 'Пароли не совпадают'
+  NotMatchPassword: 'Пароли не совпадают',
+  InvalidLogin: 'Используйте латинские буквы, цифры и _'
 }
 
 singInBtn.addEventListener('click', async () => {
   const login = loginInput.value.trim();
   if (!login) return errorLabel.textContent = error.EmptyLogin;
+  if (!/^\w+$/.test(login)) return errorLabel.textContent = error.InvalidLogin;
 
   const password = passwordInput.value.trim();
   if (!password) return errorLabel.textContent = error.EmptyPassword;
